@@ -1,16 +1,13 @@
 package com.psuwal.starter.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class UserController {
+public class LoginController {
 
-	@GetMapping("/")
-	public String welcomePage(Model model) {
-		
-		return "index";
+	@GetMapping("/login")
+	public String loginPage() {
+		return "login";
 	}
-	
 }
