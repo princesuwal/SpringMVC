@@ -1,16 +1,20 @@
 package com.psuwal.starter.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import java.security.Principal;
 
-@Controller
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class UserController {
 
-	@GetMapping("/")
-	public String welcomePage(Model model) {
+	@GetMapping("/index")
+	public String welcomePage(Principal principal) {
 		
-		return "index";
+		return "Hello " + principal.getName();
 	}
 	
 }

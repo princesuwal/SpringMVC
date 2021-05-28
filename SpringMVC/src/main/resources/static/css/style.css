@@ -110,7 +110,7 @@ a {
 	outline: none;
 }
 
-.login-show input[type="button"] {
+.login-show button {
 	max-width: 150px;
 	width: 100%;
 	background: #444444;
@@ -138,7 +138,7 @@ a {
 	outline: none;
 }
 
-.register-show input[type="button"] {
+.register-show button {
 	max-width: 150px;
 	width: 100%;
 	background: #444444;
